@@ -42,7 +42,7 @@ summary(Brain_all)
 
  #DO NOT RUN
 # ANALYSIS, prep START HERE ---------------------------------------------------
-num_cores <- detectCores() - 10  # Number of cores to use  (CHANGE IF YOU HAVE A WEAKER SYSTEM)
+num_cores <- detectCores() - 2  # Number of cores to use  (CHANGE IF YOU HAVE A WEAKER SYSTEM)
 cl <- makeCluster(num_cores)  # Create a cluster with the available cores
 registerDoParallel(cl) 
 # no run write.csv(Brain_all, "Brain")
